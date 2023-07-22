@@ -1,16 +1,23 @@
 /* css reset */
-*, html{
+*,
+html {
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
 }
 
-body>#container {
+/* separate flex declarations */
+body>#container,
+#logo {
     display: flex;
+}
+
+body>#container {
     height: 100vh;
 }
 
+/* background style */
 .background {
     background-image: url(./.resources/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
@@ -32,7 +39,7 @@ body>#container {
     width: 100%;
 }
 
-#logo *{
+#logo * {
     font-family: Norse-Bold;
     width: auto;
     font-size: 5em;
@@ -40,7 +47,7 @@ body>#container {
     align-self: center;
 }
 
-#logo img{
+#logo img {
     height: 1.5em;
 }
 
